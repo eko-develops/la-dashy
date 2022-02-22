@@ -10,7 +10,7 @@
   height: 100vh;
 
   .content {
-    padding: 1rem;
+    padding: 1.5rem;
   }
 }
 
@@ -52,8 +52,17 @@ header {
   }
 }
 
+.stone-engraving-form-wrapper form {
+  display: flex;
+  flex-direction: column;
+}
+
 .active-link {
   background-color: var(--button-bg-active);
+}
+
+.how-it-works-section {
+  margin-top: 0.5rem;
 }
 
 @media all and (min-width: 576px) {
