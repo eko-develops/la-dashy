@@ -1,4 +1,23 @@
+import engravingsList from "../data/engravingsList";
+
 const StoneEngraving = () => {
+  const selectEngravings = (
+    <select>
+      {engravingsList.map((engraving, i) => (
+        <option key={i} value={engraving}>
+          {engraving}
+        </option>
+      ))}
+    </select>
+  );
+
+  const handleSubmit = (e) => {
+    e.preventDefault();
+    const firstSelect = e.target[0].value;
+    const secondSelect = e.target[1].value;
+    console.log({ firstSelect, secondSelect });
+  };
+
   return (
     <>
       <h2>Stone Engravings</h2>
@@ -26,19 +45,12 @@ const StoneEngraving = () => {
         </div>
       </div>
       <div className="stone-engraving-form-wrapper">
-        <form>
+        <form onSubmit={handleSubmit}>
           <label>First Engraving</label>
-          <select id="standard-select">
-            <option value="Option 1">Option 1</option>
-            <option value="Option 2">Option 2</option>
-            <option value="Option 3">Option 3</option>
-            <option value="Option 4">Option 4</option>
-            <option value="Option 5">Option 5</option>
-            <option value="Option length">
-              Option that has too long of a value to fit
-            </option>
-          </select>
+          {selectEngravings}
           <label>Second Engraving</label>
+          {selectEngravings}
+          <button type="submit">Check</button>
         </form>
       </div>
     </>
