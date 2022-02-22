@@ -4,6 +4,8 @@ import { BrowserRouter, Route, Routes } from "react-router-dom";
 import StoneEngraving from "./components/StoneEngraving";
 import TopEngravings from "./components/TopEngravings";
 import Builds from "./components/Builds";
+// import engravingsList from "./data/engravingsList";
+// import popularBuilds from "./data/popularBuilds";
 
 function App() {
   return (
