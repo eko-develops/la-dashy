@@ -1,6 +1,10 @@
-import { Link } from "react-router-dom";
+import { NavLink } from "react-router-dom";
 
 const Header = () => {
+  const handleActiveLink = (isActive) => {
+    return isActive ? "active-link" : "";
+  };
+
   return (
     <header>
       <div className="logo">
@@ -9,13 +13,28 @@ const Header = () => {
       <nav>
         <ul>
           <li>
-            <Link to="/stone-engravings">Stone Engraving</Link>
+            <NavLink
+              className={({ isActive }) => handleActiveLink(isActive)}
+              to="/"
+            >
+              Stone Engraving
+            </NavLink>
           </li>
           <li>
-            <Link to="/top-engravings">Top Engravings</Link>
+            <NavLink
+              className={({ isActive }) => handleActiveLink(isActive)}
+              to="/top-engravings"
+            >
+              Top Engravings
+            </NavLink>
           </li>
           <li>
-            <Link to="/builds">Builds</Link>
+            <NavLink
+              className={({ isActive }) => handleActiveLink(isActive)}
+              to="/builds"
+            >
+              Builds
+            </NavLink>
           </li>
         </ul>
       </nav>

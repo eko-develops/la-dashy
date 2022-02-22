@@ -2,7 +2,8 @@
   --header-bg-colour: #222;
   --main-bg-colour: #333;
   --button-bg-hover: rgb(85, 85, 85);
-  --button-bg-hover: tomato;
+  --button-bg-hover: rgb(253, 78, 47);
+  --button-bg-active: rgb(253, 78, 47);
 }
 
 .App {
@@ -26,6 +27,8 @@ header {
       -ms-flex-pack: center;
           justify-content: center;
   height: 125px;
+  -webkit-box-shadow: rgba(0, 0, 0, 0.24) 0px 3px 8px;
+          box-shadow: rgba(0, 0, 0, 0.24) 0px 3px 8px;
 }
 
 header .logo h1 {
@@ -53,9 +56,14 @@ header nav ul li a {
   padding: 0.5rem 0.8rem;
   -webkit-transition: all 0.3s ease-in-out 0s;
   transition: all 0.3s ease-in-out 0s;
+  font-weight: bold;
 }
 
 header nav ul li a:hover {
   background-color: var(--button-bg-hover);
+}
+
+.active-link {
+  background-color: var(--button-bg-active);
 }
 /*# sourceMappingURL=App.css.map */

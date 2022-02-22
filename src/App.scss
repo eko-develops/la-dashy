@@ -2,7 +2,8 @@
   --header-bg-colour: #222;
   --main-bg-colour: #333;
   --button-bg-hover: rgb(85, 85, 85);
-  --button-bg-hover: tomato;
+  --button-bg-hover: rgb(253, 78, 47);
+  --button-bg-active: rgb(253, 78, 47);
 }
 
 .App {
@@ -19,6 +20,7 @@ header {
   background-color: var(--header-bg-colour);
   justify-content: center;
   height: 125px;
+  box-shadow: rgba(0, 0, 0, 0.24) 0px 3px 8px;
 
   .logo {
     h1 {
@@ -28,6 +30,7 @@ header {
 
   nav {
     margin-top: 0.5rem;
+
     ul {
       display: flex;
       justify-content: space-evenly;
@@ -39,6 +42,7 @@ header {
           border-radius: 7px;
           padding: 0.5rem 0.8rem;
           transition: all 0.3s ease-in-out 0s;
+          font-weight: bold;
           &:hover {
             background-color: var(--button-bg-hover);
           }
@@ -46,6 +50,10 @@ header {
       }
     }
   }
+}
+
+.active-link {
+  background-color: var(--button-bg-active);
 }
 
 @media all and (min-width: 576px) {
