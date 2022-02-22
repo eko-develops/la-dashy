@@ -6,7 +6,11 @@
 }
 
 .App {
-  background-color: var(--main-bg-colour);
+  height: 100vh;
+}
+
+.App .content {
+  height: 100%;
 }
 
 header {
@@ -21,10 +25,15 @@ header {
   -webkit-box-pack: center;
       -ms-flex-pack: center;
           justify-content: center;
+  height: 125px;
 }
 
 header .logo h1 {
   text-align: center;
+}
+
+header nav {
+  margin-top: 0.5rem;
 }
 
 header nav ul {

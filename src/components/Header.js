@@ -1,3 +1,5 @@
+import { Link } from "react-router-dom";
+
 const Header = () => {
   return (
     <header>
@@ -7,13 +9,13 @@ const Header = () => {
       <nav>
         <ul>
           <li>
-            <a href="#">Stone Engraving</a>
+            <Link to="/stone-engravings">Stone Engraving</Link>
           </li>
           <li>
-            <a href="#">Top Engravings</a>
+            <Link to="/top-engravings">Top Engravings</Link>
           </li>
           <li>
-            <a href="#">Builds</a>
+            <Link to="/builds">Builds</Link>
           </li>
         </ul>
       </nav>
