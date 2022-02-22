@@ -1,5 +1,9 @@
 const Builds = () => {
-  return <div>Builds</div>;
+  return (
+    <>
+      <h2>Builds</h2>
+    </>
+  );
 };
 
 export default Builds;

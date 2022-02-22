@@ -1,5 +1,9 @@
 const StoneEngraving = () => {
-  return <div>StoneEngraving</div>;
+  return (
+    <>
+      <h2>Stone Engravings</h2>
+    </>
+  );
 };
 
 export default StoneEngraving;

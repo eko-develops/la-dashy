@@ -1,5 +1,9 @@
 const TopEngravings = () => {
-  return <div>TopEngravings</div>;
+  return (
+    <>
+      <h2>Top Engravings</h2>
+    </>
+  );
 };
 
 export default TopEngravings;
