@@ -1,12 +1,52 @@
+:root {
+  --header-bg-colour: #222;
+  --main-bg-colour: #333;
+  --button-bg-hover: rgb(85, 85, 85);
+  --button-bg-hover: tomato;
+}
+
 .App {
-  display: -webkit-box;
-  display: -ms-flexbox;
-  display: flex;
-  background-color: red;
+  background-color: var(--main-bg-colour);
 }
 
 header {
-  background-color: coral;
-  width: 200px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  background-color: var(--header-bg-colour);
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+}
+
+header .logo h1 {
+  text-align: center;
+}
+
+header nav ul {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: space-evenly;
+      -ms-flex-pack: space-evenly;
+          justify-content: space-evenly;
+  list-style-type: none;
+}
+
+header nav ul li a {
+  color: white;
+  text-decoration: none;
+  border-radius: 7px;
+  padding: 0.5rem 0.8rem;
+  -webkit-transition: all 0.3s ease-in-out 0s;
+  transition: all 0.3s ease-in-out 0s;
+}
+
+header nav ul li a:hover {
+  background-color: var(--button-bg-hover);
 }
 /*# sourceMappingURL=App.css.map */

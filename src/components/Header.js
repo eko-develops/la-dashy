@@ -1,7 +1,9 @@
 const Header = () => {
   return (
     <header>
-      <div className="logo">Lost Ark Dashboard</div>
+      <div className="logo">
+        <h1>LA Dashy</h1>
+      </div>
       <nav>
         <ul>
           <li>

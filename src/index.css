@@ -19,6 +19,7 @@
 }
 
 body {
+  color: white;
   min-height: 100vh;
   font-family: "Local Poppins";
 }

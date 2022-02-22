@@ -1,11 +1,45 @@
+:root {
+  --header-bg-colour: #222;
+  --main-bg-colour: #333;
+  --button-bg-hover: rgb(85, 85, 85);
+  --button-bg-hover: tomato;
+}
+
 .App {
-  display: flex;
-  background-color: red;
+  background-color: var(--main-bg-colour);
 }
 
 header {
-  background-color: coral;
-  width: 200px;
+  display: flex;
+  flex-direction: column;
+  background-color: var(--header-bg-colour);
+  justify-content: center;
+
+  .logo {
+    h1 {
+      text-align: center;
+    }
+  }
+
+  nav {
+    ul {
+      display: flex;
+      justify-content: space-evenly;
+      list-style-type: none;
+      li {
+        a {
+          color: white;
+          text-decoration: none;
+          border-radius: 7px;
+          padding: 0.5rem 0.8rem;
+          transition: all 0.3s ease-in-out 0s;
+          &:hover {
+            background-color: var(--button-bg-hover);
+          }
+        }
+      }
+    }
+  }
 }
 
 @media all and (min-width: 576px) {
