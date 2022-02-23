@@ -4,6 +4,7 @@
   --button-bg-hover: rgb(85, 85, 85);
   --button-bg-hover: rgb(253, 78, 47);
   --button-bg-active: rgb(253, 78, 47);
+  --button-shadow: rgba(0, 0, 0, 0.24) 0px 3px 8px;
 }
 
 .App {
@@ -16,8 +17,17 @@
 
 button {
   color: white;
-  font-family: "Local Poppins";
   font-weight: bold;
+  -webkit-box-shadow: var(--button-shadow);
+          box-shadow: var(--button-shadow);
+}
+
+select {
+  border: none;
+  padding: 0.5rem 0;
+  border-radius: 4px;
+  -webkit-box-shadow: var(--button-shadow);
+          box-shadow: var(--button-shadow);
 }
 
 header {
