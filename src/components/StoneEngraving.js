@@ -1,8 +1,18 @@
+import { useState } from "react";
 import engravingsList from "../data/engravingsList";
+import StoneEngravingResults from "./StoneEngravingResults";
 
 const StoneEngraving = () => {
+  const [userOptions, setUserOptions] = useState({
+    option1: null,
+    option2: null,
+  });
+
   const selectEngravings = (
     <select>
+      <option hidden disabled selected value>
+        -- Select an engraving --
+      </option>
       {engravingsList.map((engraving, i) => (
         <option key={i} value={engraving}>
           {engraving}
@@ -13,9 +23,14 @@ const StoneEngraving = () => {
 
   const handleSubmit = (e) => {
     e.preventDefault();
-    const firstSelect = e.target[0].value;
-    const secondSelect = e.target[1].value;
-    console.log({ firstSelect, secondSelect });
+    const option1 = e.target[0].value;
+    const option2 = e.target[1].value;
+
+    setUserOptions((prevState) => ({
+      ...prevState,
+      option1,
+      option2,
+    }));
   };
 
   return (
@@ -53,7 +68,7 @@ const StoneEngraving = () => {
           <button type="submit">Check</button>
         </form>
         <div className="stone-engraving-results">
-          <h3>Results</h3>
+          <StoneEngravingResults userOptions={userOptions} />
         </div>
       </div>
     </>
