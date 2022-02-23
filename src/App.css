@@ -20,6 +20,7 @@ button {
   font-weight: bold;
   -webkit-box-shadow: var(--button-shadow);
           box-shadow: var(--button-shadow);
+  font-family: "Local Poppins";
 }
 
 select {
