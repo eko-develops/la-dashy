@@ -52,6 +52,9 @@ const StoneEngraving = () => {
           {selectEngravings}
           <button type="submit">Check</button>
         </form>
+        <div className="stone-engraving-results">
+          <h3>Results</h3>
+        </div>
       </div>
     </>
   );

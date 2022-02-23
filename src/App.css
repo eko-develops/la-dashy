@@ -14,6 +14,12 @@
   padding: 1.5rem;
 }
 
+button {
+  color: white;
+  font-family: "Local Poppins";
+  font-weight: bold;
+}
+
 header {
   display: -webkit-box;
   display: -ms-flexbox;
@@ -53,7 +59,7 @@ header nav ul li a {
   color: white;
   text-decoration: none;
   border-radius: 7px;
-  padding: 0.5rem 0.8rem;
+  padding: 0.5rem 0.5rem;
   -webkit-transition: all 0.3s ease-in-out 0s;
   transition: all 0.3s ease-in-out 0s;
   font-weight: bold;
@@ -71,6 +77,30 @@ header nav ul li a:hover {
   -webkit-box-direction: normal;
       -ms-flex-direction: column;
           flex-direction: column;
+}
+
+.stone-engraving-form-wrapper form label {
+  font-weight: bold;
+  margin-top: 1rem;
+}
+
+.stone-engraving-form-wrapper form button {
+  margin-top: 1.25rem;
+  background-color: var(--button-bg-active);
+  border: none;
+  padding: 1rem;
+  border-radius: 7px;
+  -webkit-transition: all 0.3s ease-in-out 0s;
+  transition: all 0.3s ease-in-out 0s;
+  cursor: pointer;
+}
+
+.stone-engraving-form-wrapper form button:hover {
+  background-color: #ff593c;
+}
+
+.stone-engraving-results {
+  margin: 1rem 0;
 }
 
 .active-link {
